@@ -28,7 +28,7 @@ const products = [
   {
     _id: '3',
     name: 'Robot Girlfriend',
-    image: '/images/undraw_Designer_girl_s028.svg',
+    image: '/images/undraw_super_woman_dv0y.svg',
     description:
       "A realistic girlfriend robot, with love and affection and no in-laws!",
     brand: 'Robocorp',
@@ -49,7 +49,7 @@ const products = [
     price: 20999,
     countInStock: 5,
     rating: 2,
-    numReviews: 12,
+    numReviews: 3,
   },
    {
     _id: '5',
@@ -62,7 +62,7 @@ const products = [
     price: 15999,
     countInStock: 8,
     rating: 3,
-    numReviews: 12,
+    numReviews: 19,
   },
     {
     _id: '6',
@@ -75,7 +75,7 @@ const products = [
     price: 29999,
     countInStock: 4,
     rating: 4.5,
-    numReviews: 12,
+    numReviews: 25,
   },
   {
     _id: '7',

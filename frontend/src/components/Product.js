@@ -4,9 +4,9 @@ import Rating from '../components/Rating.js'
 
 const Product = ({ product }) => {
     return (
-        <Card className="my-3 p-3 rounded">
+        <Card style={{maxWidth: '300px', height: '480px'}} className="my-3 p-3 rounded">
             <a href={`/product/${product._id}`}>
-                <Card.Img src={product.image} className="img-fluid card-img-top" variant="top" />
+                <Card.Img style={{maxWidth: '250px', maxHeight: '250px'}} src={product.image} className="img-fluid card-img-top" variant="top" />
             </a>
 
             <Card.Body>
