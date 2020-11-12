@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { Container } from 'react-bootstrap';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
+import Homescreen from './screens/Homescreen.js';
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
 
       <Container>
         <main className="py-3">
-          <h1>Welcome To The Robot Shop</h1>
+          <Homescreen />
         </main>
        </Container>
 
