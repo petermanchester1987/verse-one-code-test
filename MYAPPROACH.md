@@ -67,3 +67,13 @@ I was also aware that my server.js file was getting a little large and unwieldy,
 put my api routes into a separate routes folder in the backend.
 
 This in turn broke the server, so I had to rebuild it and decided to put in the notes about what I would do if it was a real async call to a database.
+
+### Redux
+
+So I would expect you can see I use hooks and component level state at this point, so I thought I should implement Redux into the project so that you could see that I could use it and global state (which is essential for larger projects with huge state).
+
+Our products should really be in global state so that many components can access it easily.
+
+I imported redux, react-redux (so that i can easily use redux in react), redux thunk (so that I can make asynchronous calls from the action creators) and redux devtools extension that makes the devtools easier to use.
+
+I then had to make a global redux store and had to bring in a Provider to surround the whole app with the state.
