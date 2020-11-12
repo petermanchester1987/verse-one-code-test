@@ -1,0 +1,15 @@
+{
+  "name": "robotshop",
+  "version": "1.0.0",
+  "description": "This is a coding test for Verse One. I was asked to build an Online Shop using whatever stack I liked.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js"
+  },
+  "author": "Peter Manchester",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
