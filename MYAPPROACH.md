@@ -1,7 +1,8 @@
 # My Approach
 
-I have only worked on one React based e-commerce project before, so this was a
+I have only worked on one React based e-commerce project before, in a project that a coding tutor Basir had done on Youtube so this was a
 great challenge to try to do as efficiently and cleanly as possible.
+I worked with React and Redux on other projects, but am absolutely loving learning more and more everyday.
 
 ## My objectives were:
 
@@ -77,3 +78,7 @@ Our products should really be in global state so that many components can access
 I imported redux, react-redux (so that i can easily use redux in react), redux thunk (so that I can make asynchronous calls from the action creators) and redux devtools extension that makes the devtools easier to use.
 
 I then had to make a global redux store and had to bring in a Provider to surround the whole app with the state.
+
+The listproduct action replaces the useEffect Hook. Then I had to reformat the homescreen to use the redux state.
+
+I used the useDispatch and useReducer hooks to replace the useState component level state.
