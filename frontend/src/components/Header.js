@@ -12,8 +12,8 @@ const Header = () => {
 
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">
-                            <Nav.Link href="/products">Products</Nav.Link>
-                            <Nav.Link href="/basket">Basket</Nav.Link> 
+                            <Nav.Link href="/products"><i className="fas fa-robot"></i> Products</Nav.Link>
+                            <Nav.Link href="/basket"><i className="fas fa-shopping-basket"></i> Basket</Nav.Link> 
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

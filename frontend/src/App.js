@@ -9,11 +9,11 @@ function App() {
     <Fragment>
       
       <Header />
-      
+
       <Container>
-        <main>
-        <h1>Robot Shop</h1>
-      </main>
+        <main className="py-3">
+          <h1>Welcome To The Robot Shop</h1>
+        </main>
        </Container>
 
       <Footer />
