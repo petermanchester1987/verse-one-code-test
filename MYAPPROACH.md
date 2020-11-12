@@ -42,3 +42,11 @@ I brought in useState and useEffect.
 
 I know you cant use an async function inside a use effect hook, but I wanted to
 use async await, rather than .then.then.then.then and have nested callback hell, so I had to define the function inside of useEffect.
+
+The Homescreen useEffect was used to make a simple call using axios for the http fetch request and then to update the state using the setState part of the useState hook.
+
+I did the same for the individual Product page.
+
+I then installed Concurrently and Nodemon because I didnt want to keep having to restart the node server and client seperately and wrote a script in the package.json file that would run the two servers using concurrently.
+
+I realised that you probably would want to see how I would do it if it were a real API call, so I brought in dotenv, to use environment variables (to hide any sensitive API information that I might have). Obviously I wont be needing API keys or client secrets etc but this is what I would do in that case. The environment variables would then be stored in that file on the backend and it would be put in .gitignore to avoid it being shared.
