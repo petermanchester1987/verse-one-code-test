@@ -50,3 +50,12 @@ I did the same for the individual Product page.
 I then installed Concurrently and Nodemon because I didnt want to keep having to restart the node server and client seperately and wrote a script in the package.json file that would run the two servers using concurrently.
 
 I realised that you probably would want to see how I would do it if it were a real API call, so I brought in dotenv, to use environment variables (to hide any sensitive API information that I might have). Obviously I wont be needing API keys or client secrets etc but this is what I would do in that case. The environment variables would then be stored in that file on the backend and it would be put in .gitignore to avoid it being shared.
+
+I know that now you are able to use the newer ES6 import syntax in Nodejs versions 14.something and higher. However, to show you that I can use common JS (not just the new stuff) I will leave the server as it is with modules et all.
+
+I would normally at this point try to do some database work, and get that connected to the server. I have only ever used postman to do practise different routes, but am keen to learn more.
+
+I realised I should probably simulate some kind of server error handling. So I made some custom middleware to simulate an error handler. Obviously this isn't necessary in this scenario, but would be useful in a real database situation I believe.
+
+I was also aware that my server.js file was getting a little large and unwieldy, so I decided to do what would be good practise to do in a real build situation and
+put my api routes into a separate routes folder in the backend.
