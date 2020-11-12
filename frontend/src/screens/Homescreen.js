@@ -19,7 +19,7 @@ const Homescreen = () => {
 
     return (
         <>
-            <h1>Products</h1>
+            <h1 className="py-5">Robot Shop</h1>
             <Row>
                 {products.map(product => (
                     <Col key={product._id} sm={12} md={6} lg={4}>
