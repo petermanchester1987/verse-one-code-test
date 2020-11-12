@@ -1,6 +1,6 @@
 const express = require('express');
 const dotenv = require('dotenv')
-const products = require('./data/data.json');
+const productRoutes = require('./routes/productRoutes.js');
 
 dotenv.config();
 
@@ -13,26 +13,8 @@ const PORT = process.env.PORT || 5000;
 //         res.send('API is running')
 // } )
 
-// All Products get route
-app.get('/api/products', (req, res) => {
-    if(products) {
-        res.json(products)
-    } else {
-        res.status(404)
-        throw new Error(`Product Not Found`)
-    }
-})
+app.use('/api/products', productRoutes);
 
-// Individual Product get route
-app.get('/api/products/:id', (req, res) => {
-    const product = products.find((p) => p._id === req.params.id)
-        if(product) {
-            res.json(product)
-        } else {
-            res.status(404)
-            throw new Error(`Product Not Found`)
-        }
-})
 
 //the custom error handling middleware I made as an example
 
