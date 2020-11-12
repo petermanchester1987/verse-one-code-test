@@ -1,5 +1,5 @@
 {
-  "name": "frontend",
+  "name": "robotshop",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -37,5 +37,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This is a coding test for Verse One. I was asked to build an Online Shop using whatever stack I liked.",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "Peter Manchester",
+  "license": "ISC"
 }
