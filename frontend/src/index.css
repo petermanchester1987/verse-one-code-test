@@ -6,8 +6,35 @@ h3 {
   padding: 0.5rem 0;
 }
 
+.productcard {
+  transition: all 1s ease-in-out;
+}
 .productcard:hover {
-  -webkit-box-shadow: -4px 5px 5px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: -4px 5px 5px 0px rgba(50, 50, 50, 0.75);
-  box-shadow: -4px 5px 5px 0px rgba(50, 50, 50, 0.75);
+  -webkit-box-shadow: 1px 0px 12px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 1px 0px 12px 5px rgba(50, 50, 50, 0.75);
+  box-shadow: 1px 0px 12px 5px rgba(50, 50, 50, 0.75);
+  transition: all 0.5s ease-in-out;
+}
+
+Link {
+  text-decoration: none;
+}
+Link:hover {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }

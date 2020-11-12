@@ -35,3 +35,10 @@ The Homescreen component was simple, just mapping through the different products
 I made a Product component using bootstrap cards that would render the different values that were passed in as product props from it's parent component, Homescreen.The product component had the Rating component as a child inside of that.
 
 Then I started on the individual Product page when the user clicked on the product itself.
+
+I thought I would use hooks first and put the info into component level state and then afterwards to add redux (to show you that I know how to use it).
+
+I brought in useState and useEffect.
+
+I know you cant use an async function inside a use effect hook, but I wanted to
+use async await, rather than .then.then.then.then and have nested callback hell, so I had to define the function inside of useEffect.
