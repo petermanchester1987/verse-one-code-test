@@ -30,7 +30,7 @@ const products = [
     name: 'Robot Girlfriend',
     image: '/images/undraw_super_woman_dv0y.svg',
     description:
-      "A realistic girlfriend robot, with love and affection and no in-laws!",
+      "A realistic girlfriend robot, with love and affection and no need for long showers!",
     brand: 'Robocorp',
     category: 'Personal',
     price: 24999,
@@ -112,8 +112,8 @@ const products = [
     brand: 'Eye-robot',
     category: 'Assisting',
     price: 26999,
-    countInStock: 4,
-    rating: 4,
+    countInStock: 0,
+    rating: 2,
     numReviews: 5,
   },
 {
