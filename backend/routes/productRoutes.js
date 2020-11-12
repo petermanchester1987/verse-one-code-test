@@ -1,10 +1,19 @@
 const express = require('express');
 const router = express.Router();
+//const expressAsyncHandler = require('express-async-handler')
+
+// this would be an easy way to handle errors in the server
+// or we could use try/catch blocks (but we cant when we arent running async operations)
 const products = require('../data/data.json');
 
 
 // All Products get route
 router.get('/', (req, res) => {
+
+    // in a real scenario, this would be an asynchronous call the database
+    // so there should really be an async up there before the callback function
+    //const products = await products.find(); finding it in the database
+
     if(products) {
         res.json(products)
     } else {
@@ -15,6 +24,12 @@ router.get('/', (req, res) => {
 
 // Individual Product get route
 router.get('/:id', (req, res) => {
+
+     // This again would be an asynchronous call the database
+    // so there should really be an async up there before the callback function
+    // you could do some kind of findById method in the database to get the right product
+
+
     const product = products.find((p) => p._id === req.params.id)
         if(product) {
             res.json(product)
