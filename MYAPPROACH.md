@@ -137,5 +137,7 @@ I tried to figure out a quick and dirty way of searching for a particular search
 
 I would have loved to have implemented some Tests. I have used Mocha and Chai (after learning about them in Codecademy Pro but am still learning TDD and BDD) but never used Jest, so learning more about TDD would have been extremely useful.
 
+I should have sorted out a better way to show any errors on search keyword, such as when symbols are entered.. but again, didn't want to take the mick and turn this into a week long project!
+
 Once again, I was restrained by time, I would have added a loading spinner for use whilst fetching the data, rather than just displaying 'Loading...' text,
 but time was against me (to try to keep to around 6 hours).
