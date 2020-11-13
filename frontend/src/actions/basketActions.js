@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import { BASKET_ADD_ITEM } from '../constants/basketConstants';
+import { BASKET_ADD_ITEM, BASKET_REMOVE_ITEM } from '../constants/basketConstants';
 
 export const addToBasket = (id, qty) => async (dispatch, getState) => {
     const { data } = await axios.get(`/api/products/${id}`)
@@ -16,5 +16,14 @@ export const addToBasket = (id, qty) => async (dispatch, getState) => {
             qty
         }
     })
+    localStorage.setItem('basketItems', JSON.stringify(getState().basket.basketItems));
+}
+
+export const removeFromBasket = (id) => (dispatch, getState) => {
+    dispatch({
+        type: BASKET_REMOVE_ITEM,
+        payload: id,
+    })
+
     localStorage.setItem('basketItems', JSON.stringify(getState().basket.basketItems));
 }

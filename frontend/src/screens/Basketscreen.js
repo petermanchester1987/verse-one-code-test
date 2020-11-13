@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { Row, Col, ListGroup, Image, Form, Button, Card } from 'react-bootstrap';
-import { addToBasket } from '../actions/basketActions';
+import { addToBasket, removeFromBasket } from '../actions/basketActions';
 
 const Basketscreen = ({ match, location, history }) => {
 
@@ -23,12 +23,12 @@ const Basketscreen = ({ match, location, history }) => {
     }, [dispatch, productId, qty]);
 
     const removeFromBasketHandler = (id) => {
-        console.log('remove');
-    }
+        dispatch(removeFromBasket(id));
+    };
 
     const checkoutHandler = () => {
-        console.log('checkout')
-    }
+        history.push(`/shipping`);
+    };
 
     return (
         <div>
