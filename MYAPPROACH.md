@@ -88,6 +88,8 @@ I had previosly had to use mapStateToProps (and hated it... so much boilerplate.
 
 I had also watched a redux tutorial recently that suggested I should seperate my reducers to make it easier to debug later on. So I implemented that into the workflow.
 
+### Cart
+
 # Extras
 
 I would have loved to have implemented some more Tests. I have used Mocha and Chai (after learning about them in Codecademy Pro but am still learning TDD and BDD) but never used Jest,
