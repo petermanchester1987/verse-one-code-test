@@ -96,6 +96,12 @@ I realised I had to add a quantity selector for the amount the user would be inp
 
 I could find the value from the keys of the product.countInStock, but it took a little figuring out to find the best way to put that into a drop down option.
 
+I then had to make an add to basket handler function that would change the state as the user entered info.
+
+I was struggling to remember how to redirect a user to the next part of the shopping basket process, but had used 'history' to do it in a previous build, so tried that out.
+I got that successfully redirecting and couldnt work out how to be able to go to the shoppng basket without having to have something in it, until I realised I just needed to add a ? to then end of my
+Route query string in App.js
+
 # Extras
 
 I would have loved to have implemented some more Tests. I have used Mocha and Chai (after learning about them in Codecademy Pro but am still learning TDD and BDD) but never used Jest,

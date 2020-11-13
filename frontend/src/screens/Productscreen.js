@@ -6,7 +6,7 @@ import Rating from '../components/Rating';
 import { listProductDetails } from '../actions/productActions';
 
 
-const Productscreen = ({ match }) => {
+const Productscreen = ({ history, match }) => {
 
     const [qty, setQty] = useState(0)
 
@@ -20,8 +20,12 @@ const Productscreen = ({ match }) => {
 
     }, [dispatch, match])
 
+    const addToBasketHandler = () => {
+        history.push(`/basket/${match.params.id}?qty=${qty}`)
+    }
+
     return (
-        <>
+        <> 
             <Link to="/" className="btn btn-primary my-5">Back To Products</Link>
 
             { loading ? ( 
@@ -94,7 +98,7 @@ const Productscreen = ({ match }) => {
                                 }
 
                                 <ListGroup.Item>
-                                <Button className="btn btn-block" type="button" disabled={product.countInStock < 1}>
+                                <Button onClick={addToBasketHandler} className="btn btn-block" type="button" disabled={product.countInStock < 1}>
                                         Add to Basket
                                 </Button>
                                 </ListGroup.Item>
