@@ -3,13 +3,19 @@ import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 import { productListReducer, productDetailsReducer } from './reducers/productReducers';
+import { basketReducer } from './reducers/basketReducer';
 
 const reducer = combineReducers({
     productList: productListReducer,
     productDetails: productDetailsReducer,
+    basket: basketReducer
 });
 
-const initialState = {}; 
+const basketItemsFromStorage =  localStorage.getItem('basketItems') ? JSON.parse(localStorage.getItem('basketItems')) : []
+
+const initialState = {
+    basket: { basketItems: basketItemsFromStorage }
+}; 
 
 const middleware = [thunk];
 

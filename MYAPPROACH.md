@@ -102,9 +102,22 @@ I was struggling to remember how to redirect a user to the next part of the shop
 I got that successfully redirecting and couldnt work out how to be able to go to the shoppng basket without having to have something in it, until I realised I just needed to add a ? to then end of my
 Route query string in App.js
 
+I then have to add to cart and make an action and a reducer to do that.
+
+I wasted a good 15 minutes trying to figure out why on earth my basket reducer wasnt working. Turns out I had put the state inside of an object in the reducer.
+
+I was also a little unsure about using Local storage. I had used it on occasion before to store simple info like a users colour scheme preference etc, but had to do some serious research to figure out how that would work with something like global state.
+Turns out getState is the best way to do that.
+
+### 6 Hours in
+
+I realised that I had gotten to the 6 hour mark and still hadn't finished the full functionality of the basket, never mind learned about Testing!
+
+I used getState and had to json.stringify the basket to get it into local storage (as I think it can only store strings?!)
+
 # Extras
 
-I would have loved to have implemented some more Tests. I have used Mocha and Chai (after learning about them in Codecademy Pro but am still learning TDD and BDD) but never used Jest,
+I would have loved to have implemented some Tests. I have used Mocha and Chai (after learning about them in Codecademy Pro but am still learning TDD and BDD) but never used Jest, so learning more about TDD would have been extremely useful.
 
 Once again, I was restrained by time, I would have added a loading spinner for use whilst fetching the data, rather than just displaying 'Loading...' text,
 but time was against me (to try to keep to around 6 hours).
