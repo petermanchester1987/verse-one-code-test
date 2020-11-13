@@ -7,7 +7,6 @@ import { addToBasket, removeFromBasket } from '../actions/basketActions';
 const Basketscreen = ({ match, location, history }) => {
 
     const productId = match.params.id;
-    console.log(productId)
 
     const qty = location.search ? Number(location.search.split('=')[1]) : 1;
 

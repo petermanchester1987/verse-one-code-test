@@ -119,6 +119,20 @@ So that took a while to sort out properly! But I started successfully storing th
 
 Then I started working on the layout of the shopping basket and the functionality to increase item amount and the functionality to remove from the cart.
 
+I realised that the brief had said to use an anonymous customer, so I didnt implement a login or anything, but upon clicking go to checkout there would have to be an address screen, to update the customers address, to persist it to the DB and to update the state accordingly.
+However, there was no way I would have finished all of this functionality, as I had gotten to 8 hours deep! So I quickly rushed up a placeholder for the shipping information page.
+
+### 8 Hours in!
+
+I had completely overlooked the search aspect of the build. So I thought I should do that at least if I wasnt going to be able to get any tests done in the time allotted.
+
+I then started to build out the searchbox that was going to live inside of the header.
+For some reason, I couldnt figure out how to get it working. As it kept saying cannot read property of history undefined. I realised that I had to do something I'd done on a MERN app i'd built and bring in route from react router dom. Then I had to pass in render as a prop to the child component of search box for it to be able to use the history to redirect the user.
+
+I then started to go through the different components to allow for a search term to get to the back end.
+
+I tried to figure out a quick and dirty way of searching for a particular searchterm, whether it was just part of a name of an item, so used stack overflow to figure out perhaps using a regular expression was the best way.
+
 # Extras
 
 I would have loved to have implemented some Tests. I have used Mocha and Chai (after learning about them in Codecademy Pro but am still learning TDD and BDD) but never used Jest, so learning more about TDD would have been extremely useful.

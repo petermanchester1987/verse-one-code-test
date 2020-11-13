@@ -13,6 +13,7 @@ const PORT = process.env.PORT || 5000;
 //         res.send('API is running')
 // } )
 
+
 app.use('/api/products', productRoutes);
 
 

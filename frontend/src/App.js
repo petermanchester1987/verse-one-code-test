@@ -22,6 +22,7 @@ function App() {
               <Route path="/product/:id" component={Productscreen} />
               <Route path="/basket/:id?" component={Basketscreen} />
               <Route path="/shipping" component={Shippingscreen} />
+              <Route path="/search/:keyword" component={Homescreen} />
             
           </Container>
         </main>
