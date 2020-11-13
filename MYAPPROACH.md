@@ -1,8 +1,8 @@
 # My Approach
 
-I have only worked on one React based e-commerce project before, in a project that a coding tutor Basir had done on Youtube so this was a
-great challenge to try to do as efficiently and cleanly as possible.
-I worked with React and Redux on other projects, but am absolutely loving learning more and more everyday.
+I have only worked on one React based e-commerce project before, in a project that a coding tutor Basir had done on Youtube so this was a great challenge to try to do as efficiently and cleanly as possible.
+
+I have worked with React and Redux on other projects, but have only had one from scratch online shop build to use as a guide post, so I really enjoyed the test and I'm absolutely loving learning more and more everyday.
 
 ## My objectives were:
 
@@ -82,9 +82,15 @@ I then had to make a global redux store and had to bring in a Provider to surrou
 The listproduct action replaces the useEffect Hook. Then I had to reformat the homescreen to use the redux state.
 I used the useDispatch and useReducer hooks to replace the useState component level state.
 
-I then had to do the same on the individual product screen.
+I then had to do the same on the individual product screen. I made the individual product reducer and action and then brought them into the product screen with useDispatch and useSelector from react-redux.
 
-I watched a tutorial that suggested I should seperate my reducers to make it easier to debug later on. So I implemented that into the workflow.
+I had previosly had to use mapStateToProps (and hated it... so much boilerplate...) but had read an article about not having to use it anymore with the new hooks that are available, so tried to implement them. (I am sure I'll find out if it's buggy or not!)
+
+I had also watched a redux tutorial recently that suggested I should seperate my reducers to make it easier to debug later on. So I implemented that into the workflow.
+
+# Extras
+
+I would have loved to have implemented some more Tests. I have used Mocha and Chai (after learning about them in Codecademy Pro but am still learning TDD and BDD) but never used Jest,
 
 Once again, I was restrained by time, I would have added a loading spinner for use whilst fetching the data, rather than just displaying 'Loading...' text,
 but time was against me (to try to keep to around 6 hours).
