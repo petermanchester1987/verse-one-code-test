@@ -8,7 +8,7 @@ const Searchbox = ({ history }) => {
     const submitHandler = (e) => {
         e.preventDefault();
         if(searchTerm.trim()){
-            history.push(`/search/${searchTerm}`)
+            history.push(`/search/${encodeURIComponent(searchTerm)}`)
         } else {
             history.push('/')
         }

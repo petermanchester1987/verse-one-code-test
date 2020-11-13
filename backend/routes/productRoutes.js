@@ -14,11 +14,12 @@ router.get('/', (req, res) => {
     //const products = await products.find(); finding it in the database
 
     const keyword = req.query.keyword;
+    
 
 
     if(keyword.length < 1) {
         res.json(products)
-    } else if (keyword.length > 1){
+    } else if (keyword.length >= 1){
     const userQueryRegEx = new RegExp('.*' + keyword + '.*','gi');
     const filteredArray = products.filter((item) => {
         return  userQueryRegEx.test(item.name) || userQueryRegEx.test(item.description) || userQueryRegEx.test(item.brand)
