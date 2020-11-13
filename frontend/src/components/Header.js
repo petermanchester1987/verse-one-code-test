@@ -12,7 +12,7 @@ const Header = () => {
            <Navbar bg="light" expand="lg" collapseOnSelect>
                <Container>
                    <LinkContainer to="/">
-                        <Navbar.Brand>Robot Shop</Navbar.Brand>
+                        <Navbar.Brand><i className="fas fa-robot"></i> Robot Shop</Navbar.Brand>
                     </LinkContainer>
 
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

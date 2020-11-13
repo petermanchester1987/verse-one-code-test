@@ -131,7 +131,7 @@ For some reason, I couldnt figure out how to get it working. As it kept saying c
 
 I then started to go through the different components to allow for a search term to get to the back end.
 
-I tried to figure out a quick and dirty way of searching for a particular searchterm, whether it was just part of a name of an item, so used stack overflow to figure out perhaps using a regular expression was the best way.
+I tried to figure out a quick and dirty way of searching for a particular searchterm, whether it was just part of a name of an item, so used stack overflow to figure out perhaps using a regular expression was the best way. IT TOOK SO LONG. But I figured out the best way to do it, in this horrible case!
 
 # Extras
 

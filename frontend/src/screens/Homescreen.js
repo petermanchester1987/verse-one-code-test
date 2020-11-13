@@ -19,7 +19,7 @@ const Homescreen = ({ match }) => {
 
     return (
         <>
-            <h1 className="py-5">Robot Shop</h1>
+            <h1 className="py-5"> <i className="fas fa-robot"></i> Robot Shop</h1>
             { loading ? ( 
             <h2>Loading...</h2> 
             ) : error ? ( 
