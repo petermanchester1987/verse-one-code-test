@@ -90,6 +90,12 @@ I had also watched a redux tutorial recently that suggested I should seperate my
 
 ### Cart
 
+I thought I would have to use local storage to keep the data on the page refresh, so I started building the cart out with that in mind.
+
+I realised I had to add a quantity selector for the amount the user would be inputing into their cart.
+
+I could find the value from the keys of the product.countInStock, but it took a little figuring out to find the best way to put that into a drop down option.
+
 # Extras
 
 I would have loved to have implemented some more Tests. I have used Mocha and Chai (after learning about them in Codecademy Pro but am still learning TDD and BDD) but never used Jest,
