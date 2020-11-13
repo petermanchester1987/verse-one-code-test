@@ -80,5 +80,11 @@ I imported redux, react-redux (so that i can easily use redux in react), redux t
 I then had to make a global redux store and had to bring in a Provider to surround the whole app with the state.
 
 The listproduct action replaces the useEffect Hook. Then I had to reformat the homescreen to use the redux state.
-
 I used the useDispatch and useReducer hooks to replace the useState component level state.
+
+I then had to do the same on the individual product screen.
+
+I watched a tutorial that suggested I should seperate my reducers to make it easier to debug later on. So I implemented that into the workflow.
+
+Once again, I was restrained by time, I would have added a loading spinner for use whilst fetching the data, rather than just displaying 'Loading...' text,
+but time was against me (to try to keep to around 6 hours).
