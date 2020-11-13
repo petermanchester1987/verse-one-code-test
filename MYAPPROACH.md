@@ -115,6 +115,10 @@ I realised that I had gotten to the 6 hour mark and still hadn't finished the fu
 
 I used getState and had to json.stringify the basket to get it into local storage (as I think it can only store strings?!)
 
+So that took a while to sort out properly! But I started successfully storing the data in local storage and getting it into state before page reload useing useEffect.
+
+Then I started working on the layout of the shopping basket and the functionality to increase item amount and the functionality to remove from the cart.
+
 # Extras
 
 I would have loved to have implemented some Tests. I have used Mocha and Chai (after learning about them in Codecademy Pro but am still learning TDD and BDD) but never used Jest, so learning more about TDD would have been extremely useful.

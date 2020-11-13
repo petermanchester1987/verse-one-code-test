@@ -24,14 +24,17 @@ const Basketscreen = ({ match, location, history }) => {
 
     const removeFromBasketHandler = (id) => {
         console.log('remove');
+    }
 
+    const checkoutHandler = () => {
+        console.log('checkout')
     }
 
     return (
         <div>
             <Row>
                 <Col md={8}>
-                    <h1>Your Shopping Basket</h1>
+                    <h2 className="my-3">Your Shopping Basket</h2>
                     {basketItems.length === 0 ? (
                     <div>
                         <Link to="/" className="btn btn-primary my-5">Back To Products</Link>
@@ -79,6 +82,15 @@ const Basketscreen = ({ match, location, history }) => {
                         <ListGroup variant="flush">
                             <ListGroup.Item>
                                 <h4>Subtotal - { basketItems.reduce((a,item) => a + item.qty, 0 )} Items</h4>
+                                £ 
+                                { basketItems
+                                    .reduce((a, item) => a + item.qty * item.price, 0)
+                                    .toFixed(2) }
+                            
+                            </ListGroup.Item>
+
+                            <ListGroup.Item>
+                                <Button type="button" className="btn btn-block" disabled={basketItems.length === 0} onClick={checkoutHandler}>Proceed To Checkout</Button>
                             </ListGroup.Item>
                         </ListGroup>
                     </Card>
