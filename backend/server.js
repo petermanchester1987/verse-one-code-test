@@ -1,20 +1,37 @@
 const express = require('express');
-const dotenv = require('dotenv')
+const dotenv = require('dotenv');
+const path = require("path");
 const productRoutes = require('./routes/productRoutes.js');
+
 
 dotenv.config();
 
 const app = express();
 
-const PORT = process.env.PORT || 5000;
-
-//just a test to see if the api was running
-// app.get('/', (req, res) => {
-//         res.send('API is running')
-// } )
+app.use(express.json());
 
 
 app.use('/api/products', productRoutes);
+
+
+
+//ONLY TO DEPLOY it
+
+
+ 
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname, '..','/frontend/build')));
+
+    app.get("*", (req, res) => {
+        res.sendFile(path.join(__dirname, "..", "frontend", "build", "index.html"));
+      });
+
+} else {
+    app.get('/', (req, res) => {
+                res.send('API is running')
+        } )
+}
+
 
 
 //the custom error handling middleware I made as an example
@@ -37,6 +54,9 @@ app.use((err, req, res, next) => {
         })
 
 })
+
+
+const PORT = process.env.PORT || 5000;
 
 
 
